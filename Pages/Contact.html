@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> MB Presonal Trainer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/Assets/Logo_Mini.png">
+        <link rel="stylesheet" href="/Styles/styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    </head>
+    <body class="fondoHome fondoContact">
+        <section class="contact">
+            <section id="header">
+                <!--Cabecera de la Paguina-->
+                <header>
+                    <div class="navBar">
+                        <figure>
+                            <!--Logo-->
+                            <img src="/Assets/Logo.png" alt="Logo MB Personal Trainer" width="190" height="110" title="Logo MB Personal Trainer"/>
+                        </figure>
+                            <!--Barra de Navegacion-->
+                        <nav>
+                            <ul>
+                                <li><a href="/intex.html">INICIO</a></li>
+                                <li><a href="/Pages/Plans.html">TU PLAN</a></li>
+                                <li><a href="/Pages/Gallery.html">GALERIA</a></li>
+                                <li><a href="/Pages/Shop.html">TIENDA</a></li>
+                                <li><a href="/Pages/Contact.html">CONTACTO</a></li>
+                            </ul>
+                        </nav>
+                            <!--Login, Ingreso y Carrito-->
+                        <section>
+                            <a class="login" title="user" href="#"><img src="/Assets/login_w.png" width="35px" height="35px" id="user"></a>
+                            <a title="ingreso" href="/Pages/User.html"><input class="buttonUser" type="submit" value="INGRESAR"/></a>
+                            <a class="carrito" title="carro" href="#"><img src="/Assets/carro_w.png" width="35px" height="35px" id="carro"></a>
+                        </section>
+                    </div>
+                    <!--Barra de Navegacion Formato 480px-->
+                    <div class="nav480">
+                        <!--Logo-->
+                        <section>
+                            <img src="/Assets/Logo.png" alt="Logo MB Personal Trainer" width="130" height="70" title="Logo MB Personal Trainer"/>
+                        </section>
+                        <!--Login y Menu-->
+                        <section class="loginMenu">
+                            <div>
+                                <a class="login" title="user" href="#"><img src="/Assets/login_w.png" width="35px" height="35px" id="user"></a> 
+                            </div>
+                            <div>
+                                <ul class="contenMenu">
+                                    <li><a class="menuIcono" title="menu" href="#"><img src="/Assets/menu_w.png" id="menu"></a>
+                                        <ul class="menu">
+                                            <li><a href="/intex.html">INICIO</a></li>
+                                            <li><a href="/Pages/Plans.html">TU PLAN</a></li>
+                                            <li><a href="/Pages/Gallery.html">GALERIA</a></li>
+                                            <li><a href="/Pages/Shop.html">TIENDA</a></li>
+                                            <li><a href="/Pages/Contact.html">CONTACTO</a></li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </header>
+            </section>
+            <section id="contact">
+                <!--Contacto-->
+                <main> 
+                    <form class="form" title="Contacto">
+                        <h2>Tenes dudas.? Escribinos</h2>
+                        <!--Nombre y Apellido-->
+                        <input class="input" type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
+                        <!--Genero-->
+                        <div class="checks">
+                            <label>Seleccione su sexo:</label>
+                            <div>
+                                <input class="check" type="radio" id="check1" name="Genero">
+                                <label for="check1">Hombre</label>   
+                            </div>
+                            <div>
+                                <input class="check" type="radio" id="check2" name="Genero">
+                                <label for="check2">Mujer</label>                            
+                            </div>
+                        </div>
+                        <!--Email-->
+                        <input class="input" type="email" name="Email" placeholder="Email">
+                        <!--Telefono-->
+                        <input class="input" type="number" name="Telefono" placeholder="Telefono">
+                        <!--Nacionalidad-->
+                        <div>
+                            <select class="region">
+                                <option selected>Selecione su Nacionalidad</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Uruguay">Uruguay</option>
+                            </select>
+                        </div>
+                        <!--Comentario-->
+                        <textarea class="input" name="Comentario" placeholder="Dejanos tu Comentario"></textarea>
+                        <!--Termino y Condiciones-->
+                        <div class="ckeckButton">
+                            <div>
+                                <input class="checkCond" type="checkbox" id="check3"><label for="check3">Acepto los Terminos y Condiciones</label>
+                            </div>
+                            <!--Enviar y Borrar-->
+                            <div>
+                                <input class="buttonForm" type="button" value="Enviar">
+                                <input class="buttonForm" type="reset" value="Borrar">
+                            </div>
+                        </div>
+                    </form>
+                </main>    
+            </section>
+            <!--Footer-->
+            <section id="footer">
+                <footer class="footer">
+                    <!--Copyright-->
+                    <div>
+                        <span>&copy;2022 - MB Personal Trainer / By. Pablo Hernandez</span>
+                    </div>
+                    <!--Redes-->
+                    <div>
+                        <aside class="redes">
+                                <a title="Facebook" href="https://es-la.facebook.com/" target="_blank"><img src="/Assets/facebook_w.png" id="Facebook"></a>
+                                <a title="Instagram" href="https://www.instagram.com/" target="_blank"><img src="/Assets/Insta_w.png" id="Instagram"></a>
+                                <a title="Whatsapp" href="https://www.whatsapp.com/" target="_blank"><img src="/Assets/whatsapp_w.png" id="Whatsapp"></a>
+                        </aside>
+                    </div>
+                    <!--Politica y Condiciones-->
+                    <div>
+                        <ul>
+                            <li><a href="/Pages/Politica.html">Plolitica de Privacidad</a></li>
+                            <li> / </li>
+                            <li><a href="/Pages/Uso.html">Condiciones se Uso</a></li>
+                            <li><img src="/Assets/Logo_Mini.png" width="35" height="40" id="Logo"></li>
+                        </ul>
+                    </div>
+                </footer>
+            </section>
+        </section>
+    </body>
+</html>

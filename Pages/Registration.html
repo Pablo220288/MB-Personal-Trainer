@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> PaginaWeb</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/Assets/Logo_Mini.png">
+        <link rel="stylesheet" href="/Styles/styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <!--Logo-->
+        <img src="/Assets/Logo.jpg" alt="Logo MB Personal Trainer" width="120" height="110" title="Logo MB Personal Trainer"/>
+        <hr >
+    <!--Barra de Navegacion-->
+    <nav>
+        <ul>
+            <li><a href="/intex.html">INICIO</a></li>
+            <li><a href="/Pages/Plans.html">ELEGI TU PLAN</a></li>
+            <li><a href="/Pages/Gallery.html">GALERIA</a></li>
+            <li><a href="/Pages/Shop.html">TIENDA</a></li>
+            <li><a href="/Pages/Contact.html">CONTACTO</a></li>
+        </ul>
+        <hr>
+    </nav>
+      <!--Fin de la Barra de Navegacion-->     
+        <form>
+            <label>
+                Sexo
+            </label>
+                <input type="radio" name="sexo">Hombre
+                <input type="radio" name="sexo">Mujer
+            <br />
+            <label>
+                Nombre y Apellido
+            </label>
+                <input type="text" id="Nombre y Apellido" placeholder="Escriba su Nombre y Apellido" size="30">
+            <br />
+            <label>
+                Selecciona tu Nacionalidad
+            </label>
+                <select>
+                    <option selected>Selecione su Nacionalidad</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Uruguay">Uruguay</option>
+                </select>
+            <br />
+            <label for="Email">
+                Email
+            </label>
+            <input type="text" id="Email" placeholder="Escriba su Email">
+            <br/>          
+            <label for="Confirme Email">
+                Confirme Email
+            </label>
+                <input type="text" id="Confirme Email" placeholder="Confirme su Email">
+                <br/>
+            <label form="Password">
+                Contraseña
+            </label>
+                <input type="password" id="Password">
+                <br/>
+            <label form="Repetir Password">
+                 Repitir Contraseña
+            </label>
+                <input type="password" id="Repetir Password">
+                <br/>
+            <label for="Uso">
+                Acepto Terminos y Condiciones de Uso
+            </label>
+                <input type="checkbox" id="Uso" checked>
+                <br/>
+                <input type="submit" value="INGRESAR">
+                <input type="reset" value="BORRAR">            
+        </form>
+        <hr />
+    <!-- Footer -->
+        <footer>
+            <span>&copy;2022</span>
+            <span>MB Personal Trainer</span>
+            <span>By. Pablo Hernandez</span>
+            <img src="/Assets/Icono.png" width="20" height="25" id="Logo">
+            <ul>
+                <li><a href="/Pages/Politica.html">Plolitica de Privacidad</a></li>
+                <li><a href="/Pages/Uso.html">Condiciones se Uso</a></li>
+            </ul>
+        </footer>
+    <!-- Fin del Footer -->
+    </body>
