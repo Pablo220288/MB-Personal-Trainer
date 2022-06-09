@@ -746,7 +746,7 @@ footer li a{
         display: flex;
     }
     .menu li a{
-        width: 690px;
+        width: 700px;
     }
     /*Index*/
     .index{
@@ -932,6 +932,9 @@ footer li a{
     }
     .nav480{
         display: flex;
+    }    
+    .menu li a{
+        width: 410px;
     }
     /*Index*/
     .index{
