@@ -939,7 +939,7 @@ footer li a{
     /*Index*/
     .index{
         grid-template-columns: 1fr;
-        grid-template-rows: 20% 150vh auto 150vh 45%;
+        grid-template-rows: 20% 100vh auto 100vh 45%;
     }
     #secParalax1{
         background-image: url("../Assets/FondoInicio480.jpg");
