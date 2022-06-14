@@ -20,26 +20,26 @@
 }
 /*Fondo Inicio*/
 #secParalax1{
-    background-image: url(/Assets/FondoInicio.jpg);
+    background-image: url(Assets/FondoInicio.jpg);
 }
 #secParalax2{
-    background-image: url(/Assets/FondoInicio2.jpg);
+    background-image: url(Assets/FondoInicio2.jpg);
     }
 /*Fondo Tu Plan*/
 .fondoPlans{
-    background-image: url(/Assets/FondoTuPlan.jpg);
+    background-image: url(Assets/FondoTuPlan.jpg);
 }
 /*Fondo Gallery*/
 .fondoGallery{
-    background-image: url(/Assets/FondoGallery.jpg);
+    background-image: url(Assets/FondoGallery.jpg);
 }
 /*Fondo Shop*/
 .fondoShop{
-    background-image: url(/Assets/Galeria8.jpg);
+    background-image: url(Assets/Galeria8.jpg);
 }
 /*Fondo Contact*/
 .fondoContact{
-    background-image: url(/Assets/FondoContact.jpg);
+    background-image: url(Assets/FondoContact.jpg);
 }
 /*Cabecera*/
 /*Barra de Navegacion*/
@@ -942,10 +942,10 @@ footer li a{
         grid-template-rows: 10% 900px 1600px 900px 22%;
     }
     #secParalax1{
-        background-image: url(/Assets/FondoInicio480.jpg);
+        background-image: url(Assets/FondoInicio480.jpg);
     }
     #secParalax2{
-        background-image: url(/Assets/FondoInicio2480.jpg);
+        background-image: url(Assets/FondoInicio2480.jpg);
         }
     .textCentral{
         height: 100px;
