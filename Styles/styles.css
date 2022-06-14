@@ -939,7 +939,7 @@ footer li a{
     /*Index*/
     .index{
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 900px 1600px 900px 22%;
+        grid-template-rows: 20% 150vh auto 150vh 45%;
     }
     #secParalax1{
         background-image: url("../Assets/FondoInicio480.jpg");
@@ -958,7 +958,7 @@ footer li a{
         font-size: 20px;    
     } 
     .nosotros{
-        height: 1600px;
+        height: auto;
     }
     .marcas{
         margin-top: 60px;
