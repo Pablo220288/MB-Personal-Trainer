@@ -61,7 +61,7 @@
 .index{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 100vh auto 100vh 12%;
+    grid-template-rows: 25% 100vh auto 100vh 12%;
     grid-template-areas: 
     "header"
     "index__hijo__1"
@@ -90,7 +90,7 @@
 .textCentral{
     background-color: transparent;
     color: #ffffff;
-    margin-top: 250px;
+    margin-top: 200px;
     height: auto;
 }
 .textPrinc{
@@ -584,13 +584,17 @@
     background-color: rgba(0, 0, 0, 0.436);
     color: #ffffff;
 }
+.footerStart{
+    font-size: 15px;
+}
 /*Redes Sociales*/
 .redes{
     display: flex;
     flex-flow: row nowrap;
-}
+    justify-content: center;
+    }
 .redes a{
-    margin: auto 15px auto 15px;
+    margin: 0px 15px;
 }
 .redes a img{
     width: 30px;
@@ -616,9 +620,23 @@
     font-size: 15px;
 }
 
+@media screen and (max-width: 992px){
+    .end li{
+        margin-top: 0px;
+    }
+}
+
 /*Styles para 768px*/
 @media screen and (max-width: 768px) {
-
+    /*Index*/
+    .textPrinc{
+        font-size: 80px;
+    }
+    .secText{
+        font-size: 20px;    
+        text-align: right;
+        padding-right: 60px;
+    }
     /*Plans*/
     .plans{
         grid-template-columns: repeat(2, 1fr);
@@ -741,7 +759,16 @@
 }
 /*Styles para 480px*/
 @media screen and (max-width: 480px) {
-     /*Plans*/
+    /*Index*/
+    .textPrinc{
+        font-size: 60px;
+    }
+    .secText{
+        font-size: 15px;    
+        text-align: right;
+        padding-right: 40px;
+    }
+     /*lans*/
     .plans{
         grid-template-columns: 1fr;
         grid-template-rows: 20% repeat(4, 300px) 25%;
@@ -857,4 +884,47 @@
     #contact form{
         width: 400px;
     }
+/*Styles para 480px*/
+@media screen and (max-width: 320px) {
+    /*Index*/
+    .textPrinc{
+        font-size: 40px;
+    }
+    .secText{
+        font-size: 10px;    
+        text-align: right;
+        padding-right: 20px;
+    }
+    /*Seccion Bienvenidos*/
+    .tituloNosotros{
+        padding-top: 40px;
+        font-size: 25px;
+    }
+    .subrayado{
+        border: 1px solid;
+    }
+    .nosotros p{
+        padding: 30px 20px 30px 20px;
+    }
+    /*Seccion Confian en Nosotros*/
+    .marcasTitulo{
+        font-size: 25px;
+    }
+    .marcasLogos img{
+        width: 25px;
+        height: 25px;
+    }
+    /*Footer*/
+    .footerStart{
+        font-size: 10px;
+    }
+    .redes a img{
+        width: 25px;
+        height:25px;
+    }
+    .end li a{
+        font-size: 10px;
+    }
+}
+
 }
