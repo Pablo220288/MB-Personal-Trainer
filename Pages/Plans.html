@@ -6,66 +6,68 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="icon" href="../Assets/Logo_Mini.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="../Styles/styles.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
     </head>
-    <body class="fondoHome fondoPlans">
+    <body class="fondoPlans">
         <section class="plans">
             <section id="header">
-                <!--Cabecera de la Paguina-->
-                <header>
-                    <div class="navBar">
-                        <figure>
-                            <!--Logo-->
-                            <img src="../Assets/Logo.png" alt="Logo MB Personal Trainer" width="190" height="110" title="Logo MB Personal Trainer"/>
-                        </figure>
-                            <!--Barra de Navegacion-->
-                        <nav>
-                            <ul>
-                                <li><a href="../index.html">INICIO</a></li>
-                                <li><a href="../Pages/Plans.html">TU PLAN</a></li>
-                                <li><a href="../Pages/Gallery.html">GALERIA</a></li>
-                                <li><a href="../Pages/Shop.html">TIENDA</a></li>
-                                <li><a href="../Pages/Contact.html">CONTACTO</a></li>
-                            </ul>
-                        </nav>
-                            <!--Login, Ingreso y Carrito-->
-                        <section>
-                            <a class="login" title="user" href="#"><img src="../Assets/login_w.png" width="35px" height="35px" id="user"></a>
-                            <a title="ingreso" href="../Pages/User.html"><input class="buttonUser" type="submit" value="INGRESAR"/></a>
-                            <a class="carrito" title="carro" href="#"><img src="../Assets/carro_w.png" width="35px" height="35px" id="carro"></a>
-                        </section>
+                <!--Barra de Navegacion-->
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img class="img-fluid" src="../Assets/Logo.png" alt="" width="100"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tu plan</a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../Pages/Plans.html">Personal Trainer</a></li>
+                                <li><a class="dropdown-item" href="../Pages/Plans.html">Entrenamiento Grupal</a></li>
+                                <li><a class="dropdown-item" href="../Pages/Plans.html">A Distancia</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="../Pages/Plans.html">Plan Nutricional</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../Pages/Gallery.html">Galeria</a></li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle position-relative" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop
+                                <span class="position-absolute bottom-10 start-100 translate-middle badge rounded-pill bg-secondary">2 <span class="visually-hidden"></span></span></a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../Pages/Shop.html">Tienda</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item position-relative" href="#">Carrito
+                                  <span class="position-absolute bottom-0 start-0 translate-middle badge rounded-pill bg-secondary">2 <span class="visually-hidden"></span></span></a></li>
+                                <li><a class="dropdown-item" href="#">Vaciar</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item mx-2"><a class="nav-link active" aria-current="page" href="../Pages/Contact.html">Contacto</a></li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                          <ul class="navbar-nav">
+                            <li class="dropdown">
+                              <a class="dropdown-toggle d-flex align-items-center hidden-arrow m-3" href="#" id="navbarDropdownMenuAvatar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy"/></a>
+                              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                                <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Configuraciones</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Ingresar</a></li>
+                                <li><a class="dropdown-item" href="../Pages/Registration.html">Registrarme</a></li>
+                                <li><a class="dropdown-item" href="#">Salir</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
-                    <!--Barra de Navegacion Formato 768px y 480px-->
-                    <div class="nav480">
-                        <!--Logo-->
-                        <section>
-                            <img src="../Assets/Logo.png" alt="Logo MB Personal Trainer" width="130" height="70" title="Logo MB Personal Trainer"/>
-                        </section>
-                        <!--Login y Menu-->
-                        <section class="loginMenu">
-                            <div>
-                                <a class="login" title="user" href="#"><img src="../Assets/login_w.png" width="35px" height="35px" id="user"></a> 
-                            </div>
-                            <div>
-                                <ul class="contenMenu">
-                                    <li><a class="menuIcono" title="menu" href="#"><img src="../Assets/menu_w.png" id="menu"></a>
-                                        <ul class="menu">
-                                            <li><a href="../index.html">INICIO</a></li>
-                                            <li><a href="../Pages/Plans.html">TU PLAN</a></li>
-                                            <li><a href="../Pages/Gallery.html">GALERIA</a></li>
-                                            <li><a href="../Pages/Shop.html">TIENDA</a></li>
-                                            <li><a href="../Pages/Contact.html">CONTACTO</a></li>
-
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </div>
-                </header>
+                  </nav>
             </section>
             <!--Personal trainer-->
             <section id="personal">
@@ -175,32 +177,35 @@
                     <label class="pieContenedor">PLAN NUTRICIONAL</label>
                 </section>
             </section>
+            <!--Footer-->
             <section id="footer">
-                <!--Footer-->
-                <footer class="footer">
-                    <!--Copyright-->
-                    <div>
-                        <span>&copy;2022 - MB Personal Trainer / By. Pablo Hernandez</span>
-                    </div>
-                    <!--Redes--> 
-                    <div>
-                        <aside class="redes">
+                <footer class="container-fliud p-0 m-0 footer">
+                    <div class="row p-0 m-0 justify-content-center align-items-center">
+                        <!--Copyright-->
+                        <div class="col-sm-12 col-lg-5 my-4">
+                            <span class="footerStart">&copy;2022 - MB Personal Trainer / By. Pablo Hernandez</span>
+                        </div>
+                        <!--Redes-->
+                        <div class="col-sm-12 col-lg-2">
+                            <aside class="redes text-center my-2">
                                 <a title="Facebook" href="https://es-la.facebook.com/" target="_blank"><img src="../Assets/facebook_w.png" id="Facebook"></a>
                                 <a title="Instagram" href="https://www.instagram.com/" target="_blank"><img src="../Assets/Insta_w.png" id="Instagram"></a>
                                 <a title="Whatsapp" href="https://www.whatsapp.com/" target="_blank"><img src="../Assets/whatsapp_w.png" id="Whatsapp"></a>
-                        </aside>
-                    </div>
-                    <!--Politica y Condiciones-->
-                    <div>
-                        <ul>
-                            <li><a href="../Pages/Politica.html">Plolitica de Privacidad</a></li>
-                            <li> / </li>
-                            <li><a href="../Pages/Uso.html">Condiciones se Uso</a></li>
-                            <li><img src="../Assets/Logo_Mini.png" width="35" height="40" id="Logo"></li>
-                        </ul>
+                            </aside>
+                        </div>
+                        <!--Politica y Uso-->
+                        <div class="col-sm-12 col-lg-5 my-2">
+                            <ul class="end">
+                                <li><a href="../Pages/Politica.html">Plolitica de Privacidad</a></li>
+                                <li> / </li>
+                                <li><a href="../Pages/Uso.html">Condiciones se Uso</a></li>
+                                <li><img src="../Assets/Logo_Mini.png" width="35" height="40" id="Logo"></li>
+                            </ul>
+                        </div>
                     </div>
                 </footer>
             </section>
         </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>

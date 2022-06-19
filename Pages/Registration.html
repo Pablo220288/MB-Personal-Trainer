@@ -2,93 +2,177 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title> PaginaWeb</title>
+        <title> MB Presonal Trainer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="icon" href="../Assets/Logo_Mini.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous">
         <link rel="stylesheet" href="../Styles/styles.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
     </head>
-    <body>
-    <!--Logo-->
-        <img src="Assets/Logo.jpg" alt="Logo MB Personal Trainer" width="120" height="110" title="Logo MB Personal Trainer"/>
-        <hr >
-    <!--Barra de Navegacion-->
-    <nav>
-        <ul>
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="../Pages/Plans.html">ELEGI TU PLAN</a></li>
-            <li><a href="../Pages/Gallery.html">GALERIA</a></li>
-            <li><a href="../Pages/Shop.html">TIENDA</a></li>
-            <li><a href="../Pages/Contact.html">CONTACTO</a></li>
-        </ul>
-        <hr>
-    </nav>
-      <!--Fin de la Barra de Navegacion-->     
-        <form>
-            <label>
-                Sexo
-            </label>
-                <input type="radio" name="sexo">Hombre
-                <input type="radio" name="sexo">Mujer
-            <br />
-            <label>
-                Nombre y Apellido
-            </label>
-                <input type="text" id="Nombre y Apellido" placeholder="Escriba su Nombre y Apellido" size="30">
-            <br />
-            <label>
-                Selecciona tu Nacionalidad
-            </label>
-                <select>
-                    <option selected>Selecione su Nacionalidad</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Brasil">Brasil</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Bolivia">Bolivia</option>
-                    <option value="Uruguay">Uruguay</option>
-                </select>
-            <br />
-            <label for="Email">
-                Email
-            </label>
-            <input type="text" id="Email" placeholder="Escriba su Email">
-            <br/>          
-            <label for="Confirme Email">
-                Confirme Email
-            </label>
-                <input type="text" id="Confirme Email" placeholder="Confirme su Email">
-                <br/>
-            <label form="Password">
-                Contraseña
-            </label>
-                <input type="password" id="Password">
-                <br/>
-            <label form="Repetir Password">
-                 Repitir Contraseña
-            </label>
-                <input type="password" id="Repetir Password">
-                <br/>
-            <label for="Uso">
-                Acepto Terminos y Condiciones de Uso
-            </label>
-                <input type="checkbox" id="Uso" checked>
-                <br/>
-                <input type="submit" value="INGRESAR">
-                <input type="reset" value="BORRAR">            
-        </form>
-        <hr />
-    <!-- Footer -->
-        <footer>
-            <span>&copy;2022</span>
-            <span>MB Personal Trainer</span>
-            <span>By. Pablo Hernandez</span>
-            <img src="../Assets/Icono.png" width="20" height="25" id="Logo">
-            <ul>
-                <li><a href="../Pages/Politica.html">Plolitica de Privacidad</a></li>
-                <li><a href="../Pages/Uso.html">Condiciones se Uso</a></li>
-            </ul>
-        </footer>
-    <!-- Fin del Footer -->
+    <body class="fondoHome fondoContact">
+        <section class="contact">
+            <!--Barra de Navegacion-->
+            <section id="header">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img class="img-fluid" src="../Assets/Logo.png" alt="" width="100"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tu plan</a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../Pages/Plans.html">Personal Trainer</a></li>
+                                <li><a class="dropdown-item" href="../Pages/Plans.html">Entrenamiento Grupal</a></li>
+                                <li><a class="dropdown-item" href="../Pages/Plans.html">A Distancia</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="../Pages/Plans.html">Plan Nutricional</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../Pages/Gallery.html">Galeria</a></li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle position-relative" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop
+                                <span class="position-absolute bottom-10 start-100 translate-middle badge rounded-pill bg-secondary">2 <span class="visually-hidden"></span></span></a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../Pages/Shop.html">Tienda</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item position-relative" href="#">Carrito
+                                  <span class="position-absolute bottom-0 start-0 translate-middle badge rounded-pill bg-secondary">2 <span class="visually-hidden"></span></span></a></li>
+                                <li><a class="dropdown-item" href="#">Vaciar</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item mx-2"><a class="nav-link active" aria-current="page" href="../Pages/Contact.html">Contacto</a></li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                          <ul class="navbar-nav">
+                            <li class="dropdown">
+                              <a class="dropdown-toggle d-flex align-items-center hidden-arrow m-3" href="#" id="navbarDropdownMenuAvatar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy"/></a>
+                              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                                <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Configuraciones</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Ingresar</a></li>
+                                <li><a class="dropdown-item" href="../Pages/Registration.html">Registrarme</a></li>
+                                <li><a class="dropdown-item" href="#">Salir</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </section>
+            <section id="contact">
+                <!--Contacto-->
+                <main> 
+                    <form class="row py-4 formContact">
+                        <!--Email-->
+                        <div class="col-sm-12 col-lg-6 mb-3 text-start">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control text-start" placeholder="nombre@ejemplo.com" id="email" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">Nunca compartiremos su email con nadie más.</div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 mb-3 text-start">
+                            <label for="email" class="form-label">Confirme su email</label>
+                            <input type="email" class="form-control text-start" placeholder="nombre@ejemplo.coms" id="email">
+                        </div>
+                        <!--Contraseña-->
+                        <div class="col-sm-12 col-lg-6 mb-3 text-start">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" id="password" class="form-control" aria-describedby="passwordHelpBlock">
+                            <div id="passwordHelpBlock" class="form-text">
+                                Debe tener entre 8 y 20 caracteres.
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 mb-3 text-start">
+                            <label for="rePassword" class="form-label">Confirme su Contraseña</label>
+                            <input type="password" id="rePassword" class="form-control" aria-describedby="passwordHelpBlock">
+                            <div id="passwordHelpBlock" class="form-text">
+                                Debe coincidir con su Contraseña.
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6">
+                            <label for="genero">Sexo:</label>
+                            <div id="genero" class="form-check form-check-inline ms-3">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Hombre</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Mujer</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 gl-3 text-start">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Seleccione su pais</option>
+                                <option value="1">Argentina</option>
+                                <option value="2">Brasil</option>
+                                <option value="3">Chile</option>
+                                <option value="4">Bolivia</option>
+                                <option value="5">uruguay</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="input-group flex-nowrap g-3">
+                            <span class="input-group-text" id="addon-wrapping">Direccion</span>
+                            <input type="text" class="form-control text-start" placeholder="Escriba su Direccion" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group flex-nowrap g-3">
+                            <span class="input-group-text" id="addon-wrapping">Telefono</span>
+                            <input type="text" class="form-control text-start" placeholder="Escriba su Telefono" aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="col-sm-12 mt-3 text-start">
+                            <div class="form-check form-switch form-check-reverse mb-3 text-end">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Acepto los terminos y condiciones de uso.</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 mt-3 text-end">
+                            <button type="submit" class="btn btn-primary">Registrarme</button>
+                            <button type="reset" class="btn btn-primary">Borrar</button>
+                        </div>
+                      </form>
+                </main>    
+            </section>
+            <!--Footer-->
+            <section id="footer">
+                <footer class="container-fliud p-0 m-0 footer">
+                    <div class="row p-0 m-0 justify-content-center align-items-center">
+                        <!--Copyright-->
+                        <div class="col-sm-12 col-lg-5 my-4">
+                            <span class="footerStart">&copy;2022 - MB Personal Trainer / By. Pablo Hernandez</span>
+                        </div>
+                        <!--Redes-->
+                        <div class="col-sm-12 col-lg-2">
+                            <aside class="redes text-center my-2">
+                                <a title="Facebook" href="https://es-la.facebook.com/" target="_blank"><img src="../Assets/facebook_w.png" id="Facebook"></a>
+                                <a title="Instagram" href="https://www.instagram.com/" target="_blank"><img src="../Assets/Insta_w.png" id="Instagram"></a>
+                                <a title="Whatsapp" href="https://www.whatsapp.com/" target="_blank"><img src="../Assets/whatsapp_w.png" id="Whatsapp"></a>
+                            </aside>
+                        </div>
+                        <!--Politica y Uso-->
+                        <div class="col-sm-12 col-lg-5 my-2">
+                            <ul class="end">
+                                <li><a href="../Pages/Politica.html">Plolitica de Privacidad</a></li>
+                                <li> / </li>
+                                <li><a href="../Pages/Uso.html">Condiciones se Uso</a></li>
+                                <li><img src="../Assets/Logo_Mini.png" width="35" height="40" id="Logo"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
+</html>
