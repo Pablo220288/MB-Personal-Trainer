@@ -62,6 +62,13 @@
     background-color: rgba(0, 0, 0, 0.436);
     margin-top: 5px;
 }
+.modal_fade{
+z-index: 100;
+}
+.modal-content{
+    background-color: rgba(0, 0, 0, 0.436);
+    color: #ffffff;
+}
 /*Contenido de la Pagina Inicio*/
 .index{
     display: grid;

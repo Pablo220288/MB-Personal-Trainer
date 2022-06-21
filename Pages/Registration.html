@@ -31,11 +31,11 @@
                             <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tu plan</a>
                               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="../Pages/Plans.html">Personal Trainer</a></li>
-                                <li><a class="dropdown-item" href="../Pages/Plans.html">Entrenamiento Grupal</a></li>
-                                <li><a class="dropdown-item" href="../Pages/Plans.html">A Distancia</a></li>
+                                <li><a class="dropdown-item text-start" href="../Pages/Plans.html">Personal Trainer</a></li>
+                                <li><a class="dropdown-item text-start" href="../Pages/Plans.html">Entrenamiento Grupal</a></li>
+                                <li><a class="dropdown-item text-start" href="../Pages/Plans.html">A Distancia</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="../Pages/Plans.html">Plan Nutricional</a></li>
+                                <li><a class="dropdown-item text-start" href="../Pages/Plans.html">Plan Nutricional</a></li>
                               </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link active" aria-current="page" href="../Pages/Gallery.html">Galeria</a></li>
@@ -43,11 +43,11 @@
                               <a class="nav-link dropdown-toggle position-relative" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop
                                 <span class="position-absolute bottom-10 start-100 translate-middle badge rounded-pill bg-secondary">2 <span class="visually-hidden"></span></span></a>
                               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="../Pages/Shop.html">Tienda</a></li>
+                                <li><a class="dropdown-item text-start" href="../Pages/Shop.html">Tienda</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item position-relative" href="#">Carrito
+                                <li><a class="dropdown-item position-relative text-start" href="#">Carrito
                                   <span class="position-absolute bottom-0 start-0 translate-middle badge rounded-pill bg-secondary">2 <span class="visually-hidden"></span></span></a></li>
-                                <li><a class="dropdown-item" href="#">Vaciar</a></li>
+                                <li><a class="dropdown-item text-start" href="#">Vaciar</a></li>
                               </ul>
                             </li>
                             <li class="nav-item mx-2"><a class="nav-link active" aria-current="page" href="../Pages/Contact.html">Contacto</a></li>
@@ -58,17 +58,50 @@
                               <a class="dropdown-toggle d-flex align-items-center hidden-arrow m-3" href="#" id="navbarDropdownMenuAvatar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy"/></a>
                               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
-                                <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
-                                <li><a class="dropdown-item" href="#">Configuraciones</a></li>
+                                <li><a class="dropdown-item text-start" href="#">Mi Perfil</a></li>
+                                <li><a class="dropdown-item text-start" href="#">Configuraciones</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Ingresar</a></li>
-                                <li><a class="dropdown-item" href="../Pages/Registration.html">Registrarme</a></li>
-                                <li><a class="dropdown-item" href="#">Salir</a></li>
+                                <li><a class="dropdown-item text-start" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ingresar</a></li>
+                                <li><a class="dropdown-item text-start" href="../Pages/Registration.html">Registrarme</a></li>
+                                <li><a class="dropdown-item text-start" href="#">Salir</a></li>
                               </ul>
                             </li>
                           </ul>
                         </div>
                       </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade p-0" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <p class="modal-title w-100 text-center" id="staticBackdropLabel"><img class="img-fluid" src="../Assets/Logo.png" alt="" width="100"></p>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form class="row g-3 justify-content-center">
+                                  <div class="col-md-6 text-start">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                  </div>
+                                  <div class="col-md-6 text-start">
+                                    <label for="inputPassword4" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                  </div>
+                                  <div class="col-md-12 mt-3 text-start">
+                                      <div class="form-check form-switch form-check mb-3 text-start">
+                                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                          <label class="form-check-label" for="flexSwitchCheckDefault">Recordar mi Email y Contraseña.</label>
+                                      </div>
+                                  </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary">Login</button>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                   </nav>
             </section>
@@ -76,6 +109,7 @@
                 <!--Contacto-->
                 <main> 
                     <form class="row py-4 formContact">
+                        <label class="mb-3 h3">Regístrate..</label>
                         <!--Email-->
                         <div class="col-sm-12 col-lg-6 mb-3 text-start">
                           <label for="email" class="form-label">Email</label>
