@@ -59,7 +59,7 @@
                                 <li><a class="dropdown-item text-start" href="#">Mi Perfil</a></li>
                                 <li><a class="dropdown-item text-start" href="#">Configuraciones</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-start" href="#">Ingresar</a></li>
+                                <li><a class="dropdown-item text-start" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ingresar</a></li>
                                 <li><a class="dropdown-item text-start" href="../Pages/Registration.html">Registrarme</a></li>
                                 <li><a class="dropdown-item text-start" href="#">Salir</a></li>
                               </ul>
@@ -67,6 +67,39 @@
                           </ul>
                         </div>
                       </div>
+                    </div>
+                    <!-- Modal Login-->
+                    <div class="modal fade p-0" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <p class="modal-title w-100 text-center" id="staticBackdropLabel"><img class="img-fluid" src="../Assets/Logo_b.png" alt="" width="100"></p>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form class="row g-3 justify-content-center">
+                                  <div class="col-md-6 text-start">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control formLogin" id="inputEmail4">
+                                  </div>
+                                  <div class="col-md-6 text-start">
+                                    <label for="inputPassword4" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control formLogin" id="inputPassword4">
+                                  </div>
+                                  <div class="col-md-12 mt-3 text-start">
+                                      <div class="form-check form-switch form-check mb-3 text-start">
+                                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                          <label class="form-check-label" for="flexSwitchCheckDefault">Recordar mi Email y Contraseña.</label>
+                                      </div>
+                                  </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary">Ingresar</button>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                   </nav>
             </section>
@@ -134,15 +167,49 @@
                                 <a title="Whatsapp" href="https://www.whatsapp.com/" target="_blank"><img src="Assets/whatsapp_w.png" id="Whatsapp"></a>
                             </aside>
                         </div>
-                        <!--Politica y Uso-->
+                        <!--Politica y Uso Links-->
                         <div class="col-sm-12 col-lg-5 my-2">
                             <ul class="end">
-                                <li><a href="Pages/Politica.html">Plolitica de Privacidad</a></li>
+                                <li><a data-bs-toggle="modal" data-bs-target="#modalPolitica">Plolitica de Privacidad</a></li>
                                 <li> / </li>
-                                <li><a href="Pages/Uso.html">Condiciones se Uso</a></li>
+                                <li><a data-bs-toggle="modal" data-bs-target="#modalCondUso">Condiciones se Uso</a></li>
                                 <li><img src="Assets/Logo_Mini.png" width="35" height="40" id="Logo"></li>
                             </ul>
                         </div>
+                    </div>
+                    <!--Modal Politica y Uso-->
+                    <div class="modal fade" id="modalPolitica" aria-hidden="true" aria-labelledby="modalPoliticaLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalPoliticaLabel">Politica de Privacidad</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <iframe class="w-100" height="260px" src="https://www.youtube.com/embed/oYBL453b0QM" title="Introducción | Política de Privacidad de Google" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-target="#modalCondUso" data-bs-toggle="modal">Condiciones de Uso</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="modalCondUso" aria-hidden="true" aria-labelledby="modalCondUsoLabel2" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="modalCondUsoLabel2">Condiciones de Uso</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus minus numquam tenetur! Debitis, necessitatibus tenetur ex magni, fugiat eveniet officiis quaerat provident unde dolorum natus voluptatem autem aliquid sequi esse odit molestias reprehenderit laudantium assumenda dolores sed excepturi inventore dicta perspiciatis. Aliquid dignissimos maxime qui fuga architecto officia officiis eos, itaque explicabo repudiandae. Quis distinctio molestiae velit ullam commodi qui, ea deleniti! Iure exercitationem suscipit porro ullam aperiam accusamus iusto molestias, ipsa quisquam quidem autem hic laborum eum harum error est tenetur unde esse voluptate nam, non adipisci! Velit minima esse similique voluptate nemo tempore laborum. Eos, magni, voluptatum reprehenderit natus rem optio excepturi commodi consequuntur quibusdam amet, animi in placeat. Incidunt minima hic doloribus voluptatibus! Necessitatibus odio, voluptas magnam nulla amet incidunt minus. Debitis dolorem voluptatibus exercitationem delectus veritatis accusamus, a earum aliquam assumenda fugiat, dolore magnam in itaque ducimus repudiandae eveniet voluptas error ipsa quae? Vel, aliquam!
+                            </p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-target="#modalPolitica" data-bs-toggle="modal">Politica de Privacidad</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </footer>
             </section>
