@@ -68,7 +68,7 @@
 .navbar-nav {
     --bs-nav-link-hover-color: #ffffff;
 }
-/*Modal*/
+/*Modal Login*/
 .modal{
     --bs-modal-header-border-color:none;
     --bs-modal-footer-border-color:none;
@@ -475,11 +475,6 @@
     line-height: 1.5;
     width: 90%;
     margin-left: 5%;
-}
-.iconoTilde{
-    width: 12px;
-    height: 12px;
-    margin-right: 5px;
 }
 .buttonShop{
     transform: translate(-80px, 15px);
