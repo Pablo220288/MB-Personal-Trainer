@@ -838,8 +838,8 @@
         height: 65%;
     }
     .figure:hover .texto p{
-        margin-top: 40px;
-        margin-bottom: 25px;
+        margin-top: 35px;
+        margin-bottom: 15px;
     }
     .textA{
         font-size: 15px;
@@ -908,7 +908,7 @@
         "footer";
     }
     .enlacesShop li{
-        font-size: 19px;
+        font-size: 15px;
     }
     /*Contact*/
     .contact{
@@ -931,6 +931,8 @@
     .ckeckButton{
         flex-direction: column;
     }
+    /*Registrarme*/
+    
 }
 /*Styles para 320px*/
 @media screen and (max-width: 320px) {
