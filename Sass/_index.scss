@@ -1,0 +1,97 @@
+/*Grid Index*/
+.index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 100vh auto 100vh 5%;
+    grid-template-areas: 
+    "header"
+    "index__hijo__1"
+    "index__hijo__2"
+    "index__hijo__3"
+    "footer";   
+    width: $all;
+    height: 100vh;
+    #index__hijo__1{
+        grid-area: index__hijo__1;
+    }
+    #index__hijo__2{
+        grid-area: index__hijo__2;
+    }
+    #index__hijo__3{
+        grid-area: index__hijo__3;
+    }
+}
+#header{
+    grid-area: header;
+}
+#footer{
+    grid-area: footer;
+    align-items: end;
+}
+/*Textos*/
+.textCentral{
+    background-color: transparent;
+    color: $textWhite;
+    margin-top: 200px;
+    height: auto;
+    .textPrinc{
+        font-size: 100px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .secText{
+        font-size: 30px;    
+        text-align: right;
+        padding-right: 100px;
+        margin-top: 0;
+    }
+}
+/*Seccion Bienvenidos*/
+.nosotros{
+    color: $textBlack;
+    width: $all;
+    h1{
+        padding-top: 60px;
+        font-size: 40px;
+    }
+    hr{
+        border: 2px solid;
+        color: $textBlack;
+        width: 30%;
+        margin: 0px 0px 0px 35%;
+
+    }
+    p{
+        padding: 20px 70px 30px 70px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    /*Seccion Confian en Nosotros*/
+    .marcas{
+        
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: $all;
+        h1{
+            font-size: 35px;
+            font-weight: 900;
+        }
+        figure{
+            margin: 30px 0px;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            img{
+                width: 45px;
+                height: 45px;
+                &:hover{
+                    transition: transform .5s ease;
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}
+

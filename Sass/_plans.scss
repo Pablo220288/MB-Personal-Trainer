@@ -1,0 +1,115 @@
+/*Grid Plans*/
+.plans{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15% repeat(2, 1fr) 15%;
+    grid-template-areas: 
+    "header header header"
+    "personal grupo distancia"
+    ". nutri ."
+    "footer footer footer";   
+    width: 100%;
+    height: 100vh;
+    row-gap: 50px;
+    #personal{
+        grid-area: personal;
+    }
+    #grupo{
+        grid-area: grupo;
+    }
+    #distancia{
+        grid-area: distancia;
+    }
+    #nutri{
+        grid-area: nutri;
+    }
+}
+/*Contenido Etiquetas*/
+.contenedor{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    figure{
+        position: relative;
+        height: 300px;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 20px;
+        cursor: pointer;
+        .imagen{
+            margin-top: 20%;
+            width: 60%;
+            height: 60%;
+            transition: all 500ms ease-out;
+        }
+        &:hover .imagen{
+            transform: scale(1.3);
+        }
+        .texto{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $fondoForm;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 500ms ease-out;
+            p{
+                display: flex;
+                flex-direction: column;
+                color: $textBlack;
+                line-height: 1.1;
+                font-weight: 900;
+                margin-bottom: 120px;
+                margin-top: 10px;
+                transition: all 500ms ease-out;
+                .textA{
+                    font-size: 20px;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 10px;
+                    }
+                }
+                .textB{
+                    font-size: 35px;
+                }
+            }
+            .enlaces{
+                list-style-type: none;
+                padding: 0;
+                li{
+                    display: block; 
+                    color: $textBlack;
+                    font-size: 15px;
+                    line-height: 1.5;
+                    width: 100%;
+                    max-width: 350px;
+                    margin: auto;
+                }
+                img{
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        &:hover .texto{
+            opacity: 1;
+            visibility:visible;
+        }
+        &:hover .texto p{
+            margin-top: 40px;
+            margin-bottom: 20px;
+            transition: all 500ms ease-out;
+        }
+    }
+    .pieContenedor{
+        color: $textWhite;
+        font-size: 25px;
+        margin-top: 15px;
+    }
+}
+

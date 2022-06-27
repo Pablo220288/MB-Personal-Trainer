@@ -1,0 +1,930 @@
+@charset "UTF-8";
+/*html*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estructura de Fondo*/
+.fondoHome {
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+}
+
+/*Fondo Inicio*/
+#secParalax1 {
+  background-image: url("../../Assets/FondoInicio.jpg");
+  backface-visibility: hidden;
+  animation: slai 30s linear infinite alternate 0s;
+  animation-timing-function: ease-in-out;
+  height: 100vh;
+  max-width: 100%;
+}
+
+@keyframes slai {
+  0% {
+    background-image: url("../../Assets/FondoInicio.jpg");
+  }
+  25% {
+    background-image: url("../../Assets/Galeria3.jpg");
+  }
+  50% {
+    background-image: url("../../Assets/FondoShop.jpg");
+  }
+  75% {
+    background-image: url("../../Assets/Galeria4.jpg");
+  }
+  100% {
+    background-image: url("../../Assets/Galeria6.jpg");
+  }
+}
+#secParalax2 {
+  background-image: url("../../Assets/FondoInicio2.jpg");
+}
+
+/*Fondo Tu Plan*/
+.fondoPlans {
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../../Assets/FondoTuPlan.jpg");
+}
+
+/*Fondo Gallery*/
+.fondoGallery {
+  background-image: url("../../Assets/FondoGallery.jpg");
+}
+
+/*Fondo Shop*/
+.fondoShop {
+  background-image: url("../../Assets/Galeria8.jpg");
+}
+
+/*Fondo Contact*/
+.fondoContact {
+  background-image: url("../../Assets/FondoContact.jpg");
+}
+
+/*Colores*/
+/*Tamaños*/
+/*Barra de Navegacion*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.436);
+  margin-top: 5px;
+}
+.navbar .navbar-nav {
+  --bs-nav-link-hover-color: #ffffff;
+}
+.navbar .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+/*Modal Login - Politica y Uso*/
+.modal {
+  --bs-modal-header-border-color:none;
+  --bs-modal-footer-border-color:none;
+}
+.modal .modal-content {
+  background: rgba(221, 221, 221, 0.7568627451);
+  color: #000000;
+}
+.modal .modal-content .formLogin {
+  background: rgba(255, 255, 255, 0.8980392157);
+}
+.modal .modal-backdrop {
+  --bs-backdrop-zindex:0 ;
+}
+
+/*Pie de Pagina*/
+.footer {
+  background-color: rgba(0, 0, 0, 0.436);
+  color: #ffffff;
+  /*Copyright*/
+  /*Redes Sociales*/
+  /*Politica y Uso*/
+}
+.footer .footerStart {
+  font-size: 15px;
+}
+.footer .redes {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.footer .redes a {
+  margin: 0px 15px;
+}
+.footer .redes a img {
+  width: 30px;
+  height: 30px;
+  transition: all 500ms ease-out;
+}
+.footer .redes a img:hover {
+  transition: all 500ms ease-out;
+  transform: scale(1.3);
+}
+.footer .end {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.footer .end li {
+  display: inline-block;
+  text-align: center;
+}
+.footer .end li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+.footer .end li img {
+  width: 35px;
+  height: 40px;
+}
+
+/*Grid Index*/
+.index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 100vh auto 100vh 5%;
+  grid-template-areas: "header" "index__hijo__1" "index__hijo__2" "index__hijo__3" "footer";
+  width: 100%;
+  height: 100vh;
+}
+.index #index__hijo__1 {
+  grid-area: index__hijo__1;
+}
+.index #index__hijo__2 {
+  grid-area: index__hijo__2;
+}
+.index #index__hijo__3 {
+  grid-area: index__hijo__3;
+}
+
+#header {
+  grid-area: header;
+}
+
+#footer {
+  grid-area: footer;
+  align-items: end;
+}
+
+/*Textos*/
+.textCentral {
+  background-color: transparent;
+  color: #ffffff;
+  margin-top: 200px;
+  height: auto;
+}
+.textCentral .textPrinc {
+  font-size: 100px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.textCentral .secText {
+  font-size: 30px;
+  text-align: right;
+  padding-right: 100px;
+  margin-top: 0;
+}
+
+/*Seccion Bienvenidos*/
+.nosotros {
+  color: #000000;
+  width: 100%;
+  /*Seccion Confian en Nosotros*/
+}
+.nosotros h1 {
+  padding-top: 60px;
+  font-size: 40px;
+}
+.nosotros hr {
+  border: 2px solid;
+  color: #000000;
+  width: 30%;
+  margin: 0px 0px 0px 35%;
+}
+.nosotros p {
+  padding: 20px 70px 30px 70px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.nosotros .marcas {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+.nosotros .marcas h1 {
+  font-size: 35px;
+  font-weight: 900;
+}
+.nosotros .marcas figure {
+  margin: 30px 0px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nosotros .marcas figure img {
+  width: 45px;
+  height: 45px;
+}
+.nosotros .marcas figure img:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.5);
+}
+
+/*Grid Plans*/
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 15% repeat(2, 1fr) 15%;
+  grid-template-areas: "header header header" "personal grupo distancia" ". nutri ." "footer footer footer";
+  width: 100%;
+  height: 100vh;
+  row-gap: 50px;
+}
+.plans #personal {
+  grid-area: personal;
+}
+.plans #grupo {
+  grid-area: grupo;
+}
+.plans #distancia {
+  grid-area: distancia;
+}
+.plans #nutri {
+  grid-area: nutri;
+}
+
+/*Contenido Etiquetas*/
+.contenedor {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor figure {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.contenedor figure .imagen {
+  margin-top: 20%;
+  width: 60%;
+  height: 60%;
+  transition: all 500ms ease-out;
+}
+.contenedor figure:hover .imagen {
+  transform: scale(1.3);
+}
+.contenedor figure .texto {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(221, 221, 221, 0.7568627451);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms ease-out;
+}
+.contenedor figure .texto p {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  line-height: 1.1;
+  font-weight: 900;
+  margin-bottom: 120px;
+  margin-top: 10px;
+  transition: all 500ms ease-out;
+}
+.contenedor figure .texto p .textA {
+  font-size: 20px;
+}
+.contenedor figure .texto p .textA img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.contenedor figure .texto p .textB {
+  font-size: 35px;
+}
+.contenedor figure .texto .enlaces {
+  list-style-type: none;
+  padding: 0;
+}
+.contenedor figure .texto .enlaces li {
+  display: block;
+  color: #000000;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+}
+.contenedor figure .texto .enlaces img {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+.contenedor figure:hover .texto {
+  opacity: 1;
+  visibility: visible;
+}
+.contenedor figure:hover .texto p {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  transition: all 500ms ease-out;
+}
+.contenedor .pieContenedor {
+  color: #ffffff;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+/*Grid Gallery*/
+.galleryPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 1fr 5%;
+  grid-template-areas: "header" "gallery" "footer";
+  width: 100%;
+  height: auto;
+}
+.galleryPage #gallery {
+  grid-area: gallery;
+}
+
+/*Grid Imagenes*/
+.galleryConten {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 8% repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "gallery1 gallery2 gallery2 gallery3 gallery3 gallery4" "gallery5 gallery2 gallery2 gallery6 gallery6 gallery6" "gallery5 gallery7 gallery8 gallery6 gallery6 gallery6" "gallery9 gallery9 gallery10 gallery10 gallery11 gallery12" "gallery9 gallery9 gallery13 gallery13 gallery11 gallery12";
+  grid-gap: 10px;
+  justify-items: stretch;
+  align-items: stretch;
+  margin: 2rem auto;
+  width: 90%;
+  min-width: 1000px;
+  /*Imagenes Galeria*/
+}
+.galleryConten .gallery1 {
+  grid-area: gallery1;
+}
+.galleryConten .gallery2 {
+  grid-area: gallery2;
+}
+.galleryConten .gallery3 {
+  grid-area: gallery3;
+}
+.galleryConten .gallery4 {
+  grid-area: gallery4;
+}
+.galleryConten .gallery5 {
+  grid-area: gallery5;
+}
+.galleryConten .gallery6 {
+  grid-area: gallery6;
+}
+.galleryConten .gallery7 {
+  grid-area: gallery7;
+}
+.galleryConten .gallery8 {
+  grid-area: gallery8;
+}
+.galleryConten .gallery9 {
+  grid-area: gallery9;
+}
+.galleryConten .gallery10 {
+  grid-area: gallery10;
+}
+.galleryConten .gallery11 {
+  grid-area: gallery11;
+}
+.galleryConten .gallery12 {
+  grid-area: gallery12;
+}
+.galleryConten .gallery13 {
+  grid-area: gallery13;
+}
+.galleryConten img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 500ms ease-out;
+}
+.galleryConten img:hover {
+  transition: all 500ms ease-out;
+  transform: scale(1.1);
+}
+
+/*Grid Shop*/
+.shop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20% 10% 1fr 10% 10%;
+  grid-template-areas: "header header header" ". . . " "product1 product2 product3" ". . ." "footer footer footer";
+  width: 100%;
+  height: auto;
+  /*Etiquetas Shop*/
+}
+.shop #product1 {
+  grid-area: product1;
+}
+.shop #product2 {
+  grid-area: product2;
+}
+.shop #product3 {
+  grid-area: product3;
+}
+.shop .productShop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shop .productShop .product {
+  display: flex;
+  position: relative;
+  width: 260px;
+  height: 420px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: linear-gradient(90deg, #ebffee 0%, #e8f0ff 100%);
+  border-radius: 10px;
+}
+.shop .productShop .product .image {
+  padding-top: 20%;
+  width: 100%;
+}
+.shop .productShop .product .contenido {
+  width: 100%;
+  height: 100%;
+  top: 85%;
+  position: absolute;
+}
+.shop .productShop .product .contenido h2 {
+  font-size: 25px;
+}
+.shop .productShop .product:hover .description {
+  transition: all 500ms ease-out;
+  transform: translatex(0);
+}
+.shop .productShop .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  backdrop-filter: blur(30px);
+  transform: translatex(100%);
+  transition: all 500ms ease-out;
+  border-radius: 10px;
+}
+.shop .productShop .description h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.shop .productShop .description ul {
+  padding: 0;
+}
+.shop .productShop .description ul li {
+  display: block;
+  object-position: center;
+  color: #000000;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 90%;
+  margin-left: 5%;
+}
+.shop .productShop .description ul img {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+.shop .productShop .description button {
+  transform: translate(-80px, 15px);
+  padding: 10px 15px 8px 12px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+  background: #58B0F6;
+  box-shadow: 1px 1px 30px -5px #58B0F6;
+  border-radius: 10px;
+  transition: box-shadow 600ms;
+}
+.shop .productShop .description button:hover {
+  box-shadow: 1px 1px 30px 0px #449de6;
+}
+.shop .productShop p {
+  background: linear-gradient(90deg, #d0ffd7 0%, #c8dcff 100%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 30px;
+  transform: translate(90px, -30px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+.shop .productShop p:hover {
+  box-shadow: 1px 1px 30px 0px rgba(0, 0, 0, 0.16);
+}
+
+/*Grid Contact*/
+.contact {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 15% 5% 1fr 5% 12%;
+  grid-template-areas: "header header header" ". . ." ". contact ." ". . ." "footer footer footer";
+  width: 100%;
+  height: 100vh;
+}
+.contact #contact {
+  grid-area: contact;
+}
+.contact #contact form {
+  /*Form Contact*/
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: rgba(221, 221, 221, 0.7568627451);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  /*Titulo Contact*/
+}
+.contact #contact form h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.contact #contact form .input {
+  /*Imputs Contact*/
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: justify;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.8980392157);
+}
+.contact #contact form .checks {
+  /*Genero Contact*/
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  background: rgba(255, 255, 255, 0.8980392157);
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.contact #contact form .checks .check {
+  border: none;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-bottom: 1px;
+}
+.contact #contact form .checks .check label {
+  font-size: 15px;
+}
+.contact #contact form .region {
+  /*Region Contact*/
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.8980392157);
+}
+.contact #contact form textarea {
+  /*Comentario Contact*/
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  min-width: 100%;
+}
+.contact #contact form .ckeckButton {
+  /*Terminos y Condiciones Contact*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact #contact form .ckeckButton .checkCond {
+  border: none;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-bottom: 1px;
+}
+.contact #contact form .ckeckButton .checkCond label {
+  font-size: 15px;
+}
+.contact #contact form .ckeckButton .buttonForm {
+  /*Buttons Contact*/
+  width: 100px;
+  border: none;
+  border-radius: 7px;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/*Styles para 992px*/
+@media screen and (max-width: 992px) {
+  .end li {
+    margin-top: 0px;
+  }
+}
+/*Styles para 768px*/
+@media screen and (max-width: 768px) {
+  /*Index*/
+  .textCentral {
+    line-height: 1;
+  }
+  .textCentral .textPrinc {
+    font-size: 80px;
+  }
+  .textCentral .secText {
+    font-size: 20px;
+    padding-right: 60px;
+  }
+  /*Plans*/
+  /*Grid Plans*/
+  .plans {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 15% repeat(2, 400px) 20%;
+    grid-template-areas: "header header" "personal grupo" "distancia nutri" "footer footer";
+    row-gap: 20px;
+  }
+  #header {
+    z-index: 100;
+  }
+  #personal {
+    z-index: 99;
+  }
+  /*Contenido Etiquetas*/
+  .contenedor .figure {
+    height: 260px;
+    width: 260px;
+  }
+  .contenedor .figure:hover .texto p {
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+  .contenedor .figure p .texto .textA {
+    font-size: 15px;
+  }
+  .contenedor .figure p .texto .textA img {
+    width: 25px;
+    height: 25px;
+  }
+  .contenedor .figure p .texto .textB {
+    font-size: 35px;
+  }
+  .contenedor .figure .enlaces li {
+    font-size: 12px;
+  }
+  .contenedor .figure .enlaces li img {
+    width: 8px;
+    height: 8px;
+  }
+  .contenedor .pieContenedor {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  /*Gallery*/
+  /*Grid Gallery*/
+  .galleryPage {
+    grid-template-rows: 4% 1fr 5%;
+    row-gap: 10px;
+    max-width: 768px;
+  }
+  /*Grid Imagenes*/
+  .galleryConten {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 250px);
+    grid-template-areas: "gallery1 gallery2 gallery2" "gallery5 gallery2 gallery2" "gallery5 gallery7 gallery7" "gallery3 gallery13 gallery13" "gallery6 gallery6 gallery6" "gallery6 gallery6 gallery6" "gallery10 gallery11 gallery12" "gallery10 gallery11 gallery12" "gallery9 gallery9 gallery8" "gallery9 gallery9 gallery4";
+    min-width: 0;
+  }
+  /*Shop*/
+  /*Grid Shop*/
+  .shop {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5% 5% repeat(2, 1fr) 12%;
+    grid-template-areas: "header header" ". ." "product1 product2" "product3 product3" "footer footer";
+  }
+  /*Contact*/
+  /*Grid Contact*/
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 1fr 15%;
+    grid-template-areas: "header" "contact" "footer";
+    height: auto;
+    /*Form Contact*/
+  }
+  .contact #contact form {
+    width: 90%;
+  }
+}
+/*Styles para 480px*/
+@media screen and (max-width: 480px) {
+  /*Login*/
+  .form-check-label {
+    font-size: 15px;
+  }
+  /*Index*/
+  /*Fondos Index*/
+  #secParalax1 {
+    background-image: url("../../Assets/FondoInicio480.jpg");
+  }
+  @keyframes slai {
+    0% {
+      background-image: url("../../Assets/FondoInicio480.jpg");
+    }
+    25% {
+      background-image: url("../../Assets/Galeria3480px.jpg");
+    }
+    50% {
+      background-image: url("../../Assets/FondoShop480.jpg");
+    }
+    75% {
+      background-image: url("../../Assets/Galeria4480.jpg");
+    }
+    100% {
+      background-image: url("../../Assets/Galeria6480px.jpg");
+    }
+  }
+  #secParalax2 {
+    background-image: url("../../Assets/FondoInicio2480.jpg");
+  }
+  /*Texto Central*/
+  .textCentral .textPrinc {
+    font-size: 60px;
+  }
+  .textCentral .secText {
+    font-size: 15px;
+    padding-right: 30px;
+  }
+  /*Plans*/
+  /*Grid Plans*/
+  .plans {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% repeat(4, 350px) 35%;
+    grid-template-areas: "header" "personal" "grupo" "distancia" "nutri" "footer";
+    row-gap: 20px;
+  }
+  /*Contenido Etiquetas*/
+  .contenedor figure:hover .texto p {
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+  /*Gallery*/
+  /*Grid Gallery*/
+  .galleryPage {
+    grid-template-rows: 4% 1fr 3%;
+    max-width: 480px;
+  }
+  /*Grid Imagenes*/
+  .galleryConten {
+    grid-template-columns: 480px;
+    grid-template-rows: repeat(13, 1fr);
+    grid-template-areas: "gallery1" "gallery2" "gallery3" "gallery4" "gallery5" "gallery6" "gallery7" "gallery8" "gallery9" "gallery10" "gallery11" "gallery12" "gallery13";
+    margin: 0;
+  }
+  .galleryConten img {
+    width: 90%;
+  }
+  /*Shop*/
+  /*Grid Shop*/
+  .shop {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 5% repeat(3, 1fr) 10%;
+    grid-template-areas: "header" "." "product1" "product2" "product3" "footer";
+  }
+  /*Contact*/
+  /*Grid Contact*/
+  .contact {
+    grid-template-rows: 12% 1fr 15%;
+  }
+  .contact #contact form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .ckeckButton {
+    flex-direction: column;
+  }
+  /*Registrarme*/
+}
+/*Styles para 320px*/
+@media screen and (max-width: 320px) {
+  /*Index*/
+  .textCentral .textPrinc {
+    font-size: 40px;
+  }
+  .textCentral .secText {
+    font-size: 15px;
+    text-align: right;
+    padding-right: 20px;
+  }
+  /*Seccion Bienvenidos*/
+  .nosotros {
+    width: 100%;
+    /*Seccion Confian en Nosotros*/
+  }
+  .nosotros h1 {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .nosotros hr {
+    width: 50%;
+    margin-left: 25%;
+    border: 2px solid;
+  }
+  .nosotros p {
+    font-size: 15px;
+    padding: 30px 20px 30px 20px;
+  }
+  .nosotros .marcas h1 {
+    font-size: 20px;
+  }
+  .nosotros .marcas figure img {
+    width: 25px;
+    height: 25px;
+  }
+  /*Gallery*/
+  .galleryPage {
+    max-width: 320px;
+  }
+  /*Shop*/
+  .productShop p {
+    transform: translate(80px, -30px);
+  }
+  /*Contact*/
+  .contact #contact form h2 {
+    font-size: 20px;
+  }
+  .contact #contact form .ckeckButton .checkLabel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .contact #contact form .ckeckButton .checkLabel label {
+    font-size: 12px;
+  }
+  /*Footer*/
+  .footer .footerStart {
+    font-size: 12px;
+  }
+  .footer .redes a img {
+    width: 25px;
+    height: 25px;
+  }
+  .footer .end {
+    margin-bottom: 0.5rem;
+    margin-top: 0.4rem;
+  }
+  .footer .end li a {
+    font-size: 12px;
+  }
+  .footer .end li img {
+    width: 20px;
+    height: 25px;
+  }
+}
+
+/*# sourceMappingURL=stylesSass.css.map */

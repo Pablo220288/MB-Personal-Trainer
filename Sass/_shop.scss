@@ -1,0 +1,120 @@
+/*Grid Shop*/
+.shop{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: 20% 10% 1fr 10% 10%;
+    grid-template-areas: 
+    "header header header"
+    ". . . "
+    "product1 product2 product3"
+    ". . ."
+    "footer footer footer";
+    width: $all;
+    height: auto;
+    #product1{
+        grid-area: product1;
+    }
+    #product2{
+        grid-area: product2;
+    }
+    #product3{
+        grid-area: product3;
+    }
+    /*Etiquetas Shop*/
+    .productShop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .product{
+            display: flex;
+            position: relative;
+            width: 260px;
+            height: 420px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background: linear-gradient(90deg, #ebffee 0%, #e8f0ff $all);
+            border-radius: 10px;
+            .image{
+                padding-top: 20%;
+                width: $all;
+            }
+           .contenido{
+            width: $all;
+            height: $all;
+            top: 85%;
+            position: absolute;
+                h2{
+                    font-size: 25px;
+                }
+            }
+            &:hover .description{
+                transition: all 500ms ease-out;
+                transform: translatex(0);
+            }
+        }
+        .description{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: $all;
+            height: $all;
+            position: absolute;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            backdrop-filter: blur(30px);
+            transform: translatex($all);
+            transition: all 500ms ease-out;
+            border-radius: 10px;
+            h3{
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+            ul{
+                padding: 0;
+                li{
+                    display: block;
+                    object-position: center;    
+                    color:$textBlack;
+                    font-size: 15px;
+                    line-height: 1.5;
+                    width: 90%;
+                    margin-left: 5%;
+                }
+                img{
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 5px;
+                }
+            }
+            button{
+                transform: translate(-80px, 15px);
+                padding: 10px 15px 8px 12px; 
+                font-size: 20px;
+                cursor: pointer;
+                border: none;
+                color: $textWhite;
+                background: #58B0F6;
+                box-shadow: 1px 1px 30px -5px #58B0F6;
+                border-radius: 10px;
+                transition: box-shadow 600ms;
+                &:hover{
+                    box-shadow: 1px 1px 30px 0px #449de6;
+                }
+            }
+        }
+        p{
+            background: linear-gradient(90deg, #d0ffd7 0%, #c8dcff $all);
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 30px;
+            transform: translate(90px, -30px);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 1px 1px 30px 0px rgba(0, 0, 0, 0.16);
+            }
+        }
+    }
+}

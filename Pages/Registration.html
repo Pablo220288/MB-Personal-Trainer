@@ -189,31 +189,65 @@
             </section>
             <!--Footer-->
             <section id="footer">
-                <footer class="container-fliud p-0 m-0 footer">
-                    <div class="row p-0 m-0 justify-content-center align-items-center">
-                        <!--Copyright-->
-                        <div class="col-sm-12 col-lg-5 my-4">
-                            <span class="footerStart">&copy;2022 - MB Personal Trainer / By. Pablo Hernandez</span>
-                        </div>
-                        <!--Redes-->
-                        <div class="col-sm-12 col-lg-2">
-                            <aside class="redes text-center my-2">
-                                <a title="Facebook" href="https://es-la.facebook.com/" target="_blank"><img src="../Assets/facebook_w.png" id="Facebook"></a>
-                                <a title="Instagram" href="https://www.instagram.com/" target="_blank"><img src="../Assets/Insta_w.png" id="Instagram"></a>
-                                <a title="Whatsapp" href="https://www.whatsapp.com/" target="_blank"><img src="../Assets/whatsapp_w.png" id="Whatsapp"></a>
-                            </aside>
-                        </div>
-                        <!--Politica y Uso-->
-                        <div class="col-sm-12 col-lg-5 my-2">
-                            <ul class="end">
-                                <li><a href="../Pages/Politica.html">Plolitica de Privacidad</a></li>
-                                <li> / </li>
-                                <li><a href="../Pages/Uso.html">Condiciones se Uso</a></li>
-                                <li><img src="../Assets/Logo_Mini.png" width="35" height="40" id="Logo"></li>
-                            </ul>
-                        </div>
+              <footer class="container-fliud p-0 m-0 footer">
+                <div class="row p-0 m-0 justify-content-center align-items-center">
+                    <!--Copyright-->
+                    <div class="col-sm-12 col-lg-5 my-sm-2 my-2">
+                        <span class="footerStart">&copy;2022 - MB Personal Trainer / By. Pablo Hernandez</span>
                     </div>
-                </footer>
+                    <!--Redes-->
+                    <div class="col-sm-12 col-lg-2">
+                        <aside class="redes text-center my-2">
+                            <a title="Facebook" href="https://es-la.facebook.com/" target="_blank"><img src="../Assets/facebook_w.png" id="Facebook"></a>
+                            <a title="Instagram" href="https://www.instagram.com/" target="_blank"><img src="../Assets/Insta_w.png" id="Instagram"></a>
+                            <a title="Whatsapp" href="https://www.whatsapp.com/" target="_blank"><img src="../Assets/whatsapp_w.png" id="Whatsapp"></a>
+                        </aside>
+                    </div>
+                    <!--Politica y Uso Links-->
+                    <div class="col-sm-12 col-lg-5">
+                        <ul class="end">
+                            <li><a data-bs-toggle="modal" data-bs-target="#modalPolitica">Plolitica de Privacidad</a></li>
+                            <li> / </li>
+                            <li><a data-bs-toggle="modal" data-bs-target="#modalCondUso">Condiciones se Uso</a></li>
+                            <li><img src="../Assets/Logo_Mini.png" id="Logo"></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Modal Politica y Uso-->
+                <div class="modal fade modalPoliticaUso" id="modalPolitica" aria-hidden="true" aria-labelledby="modalPoliticaLabel" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalPoliticaLabel">Politica de Privacidad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe class="w-100" height="260px" src="https://www.youtube.com/embed/oYBL453b0QM" title="Introducción | Política de Privacidad de Google" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#modalCondUso" data-bs-toggle="modal">Condiciones de Uso</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="modalCondUso" aria-hidden="true" aria-labelledby="modalCondUsoLabel2" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalCondUsoLabel2">Condiciones de Uso</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus minus numquam tenetur! Debitis, necessitatibus tenetur ex magni, fugiat eveniet officiis quaerat provident unde dolorum natus voluptatem autem aliquid sequi esse odit molestias reprehenderit laudantium assumenda dolores sed excepturi inventore dicta perspiciatis. Aliquid dignissimos maxime qui fuga architecto officia officiis eos, itaque explicabo repudiandae. Quis distinctio molestiae velit ullam commodi qui, ea deleniti! Iure exercitationem suscipit porro ullam aperiam accusamus iusto molestias, ipsa quisquam quidem autem hic laborum eum harum error est tenetur unde esse voluptate nam, non adipisci! Velit minima esse similique voluptate nemo tempore laborum. Eos, magni, voluptatum reprehenderit natus rem optio excepturi commodi consequuntur quibusdam amet, animi in placeat. Incidunt minima hic doloribus voluptatibus! Necessitatibus odio, voluptas magnam nulla amet incidunt minus. Debitis dolorem voluptatibus exercitationem delectus veritatis accusamus, a earum aliquam assumenda fugiat, dolore magnam in itaque ducimus repudiandae eveniet voluptas error ipsa quae? Vel, aliquam!
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#modalPolitica" data-bs-toggle="modal">Politica de Privacidad</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </footer>
             </section>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

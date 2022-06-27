@@ -1,0 +1,121 @@
+/*Grid Contact*/
+.contact{
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 15% 5% 1fr 5% 12%;
+    grid-template-areas: 
+    "header header header"
+    ". . ."
+    ". contact ."
+    ". . ."
+    "footer footer footer";
+    width: $all;
+    height: 100vh;
+    #contact{
+        grid-area: contact;
+        form{
+            /*Form Contact*/
+            width: $all;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background: $fondoForm;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            /*Titulo Contact*/
+            h2{
+                text-align: center;
+                margin: 0;
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+            .input{
+                /*Imputs Contact*/
+                width: $all;
+                margin-bottom: 10px;
+                padding: 15px;
+                box-sizing: border-box;
+                text-align: justify;
+                border: none;
+                border-radius: 7px;
+                font-size: 15px;
+                background: $fondoImput;
+            }
+            .checks{
+                /*Genero Contact*/
+                display: flex;
+                width: $all;
+                justify-content: start;
+                background: $fondoImput;
+                margin-bottom: 10px;
+                border: none;
+                border-radius: 7px;
+                font-size: 15px;
+                padding: 15px;
+                box-sizing: border-box;
+                .check{
+                    border: none;
+                    vertical-align: middle;
+                    margin-left: 20px;
+                    margin-bottom: 1px;
+                    label{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .region{
+                /*Region Contact*/
+                width: $all;
+                border: none;
+                border-radius: 7px;
+                font-size: 15px;
+                box-sizing: border-box;
+                padding: 15px;
+                margin-bottom: 10px;
+                background: $fondoImput;
+            }
+            textarea{
+                /*Comentario Contact*/
+                min-height: 100px;
+                max-height: 200px;
+                max-width: $all;
+                min-width: $all;
+            }
+            .ckeckButton{
+                /*Terminos y Condiciones Contact*/
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .checkCond{
+                    border: none;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    margin-bottom: 1px;
+                    label{
+                        font-size: 15px;
+                     }
+                }
+                .buttonForm{
+                    /*Buttons Contact*/
+                    width: 100px;
+                    border: none;
+                    border-radius: 7px;
+                    padding: 15px;
+                    box-sizing: border-box;
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+ 

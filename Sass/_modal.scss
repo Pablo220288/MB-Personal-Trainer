@@ -1,0 +1,15 @@
+/*Modal Login - Politica y Uso*/
+.modal{
+    --bs-modal-header-border-color:none;
+    --bs-modal-footer-border-color:none;
+    .modal-content{
+        background: $fondoForm;
+        color: $textBlack;
+        .formLogin{
+            background: $fondoImput;
+        }
+    }
+    .modal-backdrop{
+        --bs-backdrop-zindex:0
+    }
+}

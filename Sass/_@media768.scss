@@ -1,0 +1,119 @@
+/*Styles para 768px*/
+@media screen and (max-width: 768px) {
+    /*Index*/
+    .textCentral{
+        line-height: 1;
+        .textPrinc{
+            font-size: 80px;
+        }
+        .secText{
+            font-size: 20px;    
+            padding-right: 60px;
+        }
+    }
+    /*Plans*/
+    /*Grid Plans*/
+    .plans{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 15% repeat(2, 400px) 20%;
+        grid-template-areas: 
+        "header header"
+        "personal grupo"
+        "distancia nutri"
+        "footer footer";   
+        row-gap: 20px;
+    }
+    #header{
+        z-index: 100;
+    }
+    #personal{
+        z-index: 99;
+    }
+    /*Contenido Etiquetas*/
+    .contenedor{
+        .figure{
+            height: 260px;
+            width: 260px;
+            &:hover .texto p{
+                margin-top: 40px;
+                margin-bottom: 25px;
+            }
+            p{
+                .texto{
+                    .textA{
+                        font-size: 15px;
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                    .textB{
+                        font-size: 35px;
+                    }
+                }
+            }
+            .enlaces li{
+                font-size: 12px;
+                img{
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+        }
+        .pieContenedor{
+            font-size: 25px;
+            margin-top: 10px;
+        }
+    }
+    /*Gallery*/
+    /*Grid Gallery*/
+    .galleryPage{
+        grid-template-rows: 4% 1fr 5%;
+        row-gap: 10px;
+        max-width: 768px;
+    }
+    /*Grid Imagenes*/
+    .galleryConten{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, 250px);
+        grid-template-areas: 
+        "gallery1 gallery2 gallery2"
+        "gallery5 gallery2 gallery2"
+        "gallery5 gallery7 gallery7"
+        "gallery3 gallery13 gallery13"
+        "gallery6 gallery6 gallery6"
+        "gallery6 gallery6 gallery6"
+        "gallery10 gallery11 gallery12"
+        "gallery10 gallery11 gallery12"
+        "gallery9 gallery9 gallery8"
+        "gallery9 gallery9 gallery4";
+        min-width: 0;
+    }
+    /*Shop*/
+    /*Grid Shop*/
+    .shop{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 5% 5% repeat(2, 1fr) 12%;
+        grid-template-areas: 
+        "header header"
+        ". ."
+        "product1 product2"
+        "product3 product3"
+        "footer footer";
+    }
+    /*Contact*/
+    /*Grid Contact*/
+    .contact{
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 1fr 15%;
+        grid-template-areas: 
+        "header"
+        "contact"
+        "footer";
+        height: auto;
+        /*Form Contact*/
+        #contact form{
+            width: 90%;
+        }
+    }
+}

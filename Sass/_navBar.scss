@@ -1,0 +1,13 @@
+/*Barra de Navegacion*/
+.navbar{
+    background-color: $fondoNab;
+    margin-top: 5px;
+    .navbar-nav {
+        --bs-nav-link-hover-color: #ffffff;
+        .nav-link{
+            color: $textWhite;
+        }
+    }
+}
+
+

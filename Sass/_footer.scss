@@ -1,0 +1,48 @@
+/*Pie de Pagina*/
+.footer{
+    background-color: $fondoNab;
+    color: $textWhite;
+    /*Copyright*/
+    .footerStart{
+        font-size: 15px;
+    }
+    /*Redes Sociales*/
+    .redes{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        a{
+            margin: 0px 15px;
+            img{
+                width: 30px;
+                height:30px;
+                transition: all 500ms ease-out;
+                &:hover{
+                    transition: all 500ms ease-out;
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+    /*Politica y Uso*/
+    .end{
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 0;
+        li{
+            display: inline-block;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: $textWhite;
+                font-size: 15px;
+            }
+            img{
+                width: 35px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+
