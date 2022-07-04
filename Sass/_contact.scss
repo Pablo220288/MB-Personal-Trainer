@@ -2,7 +2,7 @@
 .contact{
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 15% 5% 1fr 5% 12%;
+    grid-template-rows: 15% 5% 1fr 5% 5%;
     grid-template-areas: 
     "header header header"
     ". . ."
@@ -14,6 +14,13 @@
     #contact{
         grid-area: contact;
         form{
+            .generalImputs{
+                box-sizing: border-box;
+                border: none;
+                border-radius: 7px;
+                padding: 15px;
+                font-size: 15px;
+            }
             /*Form Contact*/
             width: $all;
             margin: auto;
@@ -32,28 +39,20 @@
             }
             .input{
                 /*Imputs Contact*/
+                @extend .generalImputs;
                 width: $all;
                 margin-bottom: 10px;
-                padding: 15px;
-                box-sizing: border-box;
                 text-align: justify;
-                border: none;
-                border-radius: 7px;
-                font-size: 15px;
                 background: $fondoImput;
             }
             .checks{
                 /*Genero Contact*/
+                @extend .generalImputs;
                 display: flex;
                 width: $all;
                 justify-content: start;
                 background: $fondoImput;
                 margin-bottom: 10px;
-                border: none;
-                border-radius: 7px;
-                font-size: 15px;
-                padding: 15px;
-                box-sizing: border-box;
                 .check{
                     border: none;
                     vertical-align: middle;
@@ -66,12 +65,8 @@
             }
             .region{
                 /*Region Contact*/
+                @extend .generalImputs;
                 width: $all;
-                border: none;
-                border-radius: 7px;
-                font-size: 15px;
-                box-sizing: border-box;
-                padding: 15px;
                 margin-bottom: 10px;
                 background: $fondoImput;
             }
@@ -98,13 +93,9 @@
                 }
                 .buttonForm{
                     /*Buttons Contact*/
+                    @extend .generalImputs;
                     width: 100px;
-                    border: none;
-                    border-radius: 7px;
-                    padding: 15px;
-                    box-sizing: border-box;
                     margin-bottom: 10px;
-                    font-size: 15px;
                     cursor: pointer;
                 }
             }

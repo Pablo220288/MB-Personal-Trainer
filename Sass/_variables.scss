@@ -1,9 +1,22 @@
-/*Colores*/
+//Colores Fondo
 $fondoNab:rgba(0, 0, 0, 0.436);
 $fondoForm: #ddddddc1;
 $fondoImput: #ffffffe5;
+$fondoWhite: #ffffff;
+$fondoBlue: #17537a;
+
+//Colores Texto
 $textBlack: #000000;
 $textWhite: #ffffff;
+$textBlue:#18537a;
+$textRed:#ff0000;
 
-/*Tamaños*/
+//Tamaños
 $all: 100%;
+
+//Colores Redes
+$colorsRedes:(
+    face:#3b5998,
+    wtsp:#25d366,
+    insta: radial-gradient(circle at 33% 100%,#fed373 4%,#f15245 30%,#d92e7f 62%,#9b36b7 85%,#515ecf),
+)

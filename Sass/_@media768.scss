@@ -93,7 +93,7 @@
     /*Grid Shop*/
     .shop{
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 5% 5% repeat(2, 1fr) 12%;
+        grid-template-rows: 5% 5% repeat(2, 1fr) 10%;
         grid-template-areas: 
         "header header"
         ". ."

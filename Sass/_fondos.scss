@@ -16,23 +16,11 @@
     height: 100vh;
     max-width: 100%;
 }
-@keyframes slai {
-    0%{background-image: url("../../Assets/FondoInicio.jpg");}
-    25%{background-image: url("../../Assets/Galeria3.jpg");}
-    50%{background-image: url("../../Assets/FondoShop.jpg");}
-    75%{background-image: url("../../Assets/Galeria4.jpg");}
-    100%{background-image: url("../../Assets/Galeria6.jpg");}
-}
 #secParalax2{
     background-image: url("../../Assets/FondoInicio2.jpg");
     }
 /*Fondo Tu Plan*/
 .fondoPlans{
-    width: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     background-image: url("../../Assets/FondoTuPlan.jpg");
 }
 /*Fondo Gallery*/

@@ -2,13 +2,13 @@
 .plans{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 15% repeat(2, 1fr) 15%;
+    grid-template-rows: 15% repeat(2, 1fr) 5%;
     grid-template-areas: 
     "header header header"
     "personal grupo distancia"
     ". nutri ."
     "footer footer footer";   
-    width: 100%;
+    width: $all;
     height: 100vh;
     row-gap: 50px;
     #personal{
@@ -23,14 +23,16 @@
     #nutri{
         grid-area: nutri;
     }
+    .entrancePlans{
+	-webkit-animation: slide-in-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
 }
 /*Contenido Etiquetas*/
 .contenedor{
-    max-width: 100%;
-    display: flex;
+    @include flex-center-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: $all;
     figure{
         position: relative;
         height: 300px;
@@ -50,8 +52,8 @@
         .texto{
             position: absolute;
             top: 0;
-            width: 100%;
-            height: 100%;
+            width: $all;
+            height: $all;
             background-color: $fondoForm;
             opacity: 0;
             visibility: hidden;
@@ -85,7 +87,7 @@
                     color: $textBlack;
                     font-size: 15px;
                     line-height: 1.5;
-                    width: 100%;
+                    width: $all;
                     max-width: 350px;
                     margin: auto;
                 }

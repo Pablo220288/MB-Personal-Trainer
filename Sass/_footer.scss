@@ -1,31 +1,44 @@
-/*Pie de Pagina*/
 .footer{
+    /*Pie de Pagina*/
     background-color: $fondoNab;
-    color: $textWhite;
-    /*Copyright*/
+    color: $textWhite;  
     .footerStart{
+        /*Copyright*/
         font-size: 15px;
     }
-    /*Redes Sociales*/
     .redes{
-        display: flex;
+        /*Redes Sociales*/
+        @include flex-center-center;
         flex-flow: row nowrap;
-        justify-content: center;
-        a{
-            margin: 0px 15px;
-            img{
-                width: 30px;
-                height:30px;
+        i{
+            font-size: 30px;
+            margin: 0px 10px;
+            transition: all 500ms ease-out;
+            &:hover{
                 transition: all 500ms ease-out;
-                &:hover{
-                    transition: all 500ms ease-out;
-                    transform: scale(1.3);
-                }
+                transform: scale(1.3);
+            }
+        }
+        .bi-facebook{
+            &:hover{
+                color:map-get($colorsRedes, face)
+            }
+        }
+        .bi-instagram{
+             &:hover{
+                background: map-get($colorsRedes, insta);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+        }
+        .bi-whatsapp{
+            &:hover{
+                color:map-get($colorsRedes, wtsp)
             }
         }
     }
-    /*Politica y Uso*/
     .end{
+        /*Politica y Uso*/
         list-style-type: none;
         padding: 0;
         margin-bottom: 0;

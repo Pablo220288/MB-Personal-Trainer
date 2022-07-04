@@ -1,0 +1,18 @@
+//Animacion de Entrada para Ficha Planes
+@for $entrancePlans from 2 through 5{
+    .plans .entrancePlans:nth-child(#{$entrancePlans}){
+        animation-delay: 0.2s * $entrancePlans;
+    }
+}
+//Animacion de Entrada para Imagenes de Galeria
+@for $entrance from 1 through 13{
+    .galleryConten .entrada:nth-child(#{$entrance}){
+        animation-delay: 0.2s * $entrance;
+    }
+}
+//Animacion de Entrada para Cards Shop
+@for $entranceShop from 2 through 5{
+    .shop .entranceShop:nth-child(#{$entranceShop}){
+        animation-delay: 0.2s * $entranceShop;
+    }
+}
