@@ -10,7 +10,8 @@
         /*Redes Sociales*/
         @include flex-center-center;
         flex-flow: row nowrap;
-        i{
+        a{
+            color: $textWhite;
             font-size: 30px;
             margin: 0px 10px;
             transition: all 500ms ease-out;
@@ -21,7 +22,7 @@
         }
         .bi-facebook{
             &:hover{
-                color:map-get($colorsRedes, face)
+                color:map-get($colorsRedes, face);
             }
         }
         .bi-instagram{

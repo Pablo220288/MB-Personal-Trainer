@@ -13,6 +13,23 @@
     height: 100vh;
     #contact{
         grid-area: contact;
+        .contactanos{
+            width: 90%;
+            .form-control{
+                background: $fondoImput;
+            }
+            i{
+                font-size: 25px;
+                transition: all 500ms ease-out;
+                &:hover{
+                    transition: all 500ms ease-out;
+                    transform: scale(1.2);
+                }
+            }
+            iframe{
+                border-radius: 5px;
+            }
+        }
         form{
             .generalImputs{
                 box-sizing: border-box;
@@ -22,7 +39,7 @@
                 font-size: 15px;
             }
             /*Form Contact*/
-            width: $all;
+            width: $all - 10%;
             margin: auto;
             margin-top: 50px;
             margin-bottom: 50px;
@@ -34,7 +51,7 @@
             h2{
                 text-align: center;
                 margin: 0;
-                font-size: 30px;
+                font-size: 25px;
                 margin-bottom: 15px;
             }
             .input{
@@ -96,14 +113,13 @@
                     @extend .generalImputs;
                     width: 100px;
                     margin-bottom: 10px;
+                    padding: 7px;
                     cursor: pointer;
                 }
             }
         }
     }
 }
-
-
 
 
 

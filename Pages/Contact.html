@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
 
-    <link rel="icon" href="Assets/Logo_Mini.png">
+    <link rel="icon" href="../Assets/Logo_Mini.png">
     <title> MB Presonal Trainer - Contacto</title>
 
     <meta name="description" content= "¿Dudas en empezar a entrenar? ¿Crees que no es lo tuyo? Déjanos ayudarte... Ponte en contacto con nosotros y recibí el mejor asesoramiento. MB Personal Trainer">
@@ -117,51 +117,82 @@
             <!--Contacto-->
             <section id="contact">
                 <main> 
-                    <form title="Contacto">
-                        <h2>Tenes dudas.? Escribinos</h2>
-                        <!--Nombre y Apellido-->
-                        <input class="input" type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
-                        <!--Genero-->
-                        <div class="checks">
-                            <label>Seleccione su sexo:</label>
-                            <div>
-                                <input class="check" type="radio" id="check1" name="Genero">
-                                <label for="check1">Hombre</label>   
-                            </div>
-                            <div>
-                                <input class="check" type="radio" id="check2" name="Genero">
-                                <label for="check2">Mujer</label>                            
-                            </div>
-                        </div>
-                        <!--Email-->
-                        <input class="input" type="email" name="Email" placeholder="Email">
+                  <form class="contactanos row gy-2 gx-3 align-items-center">
+                    <label class="m-1 h3">Contactanos</label>
+                    <div class="col-sm-12 col-lg-6  container-fluid">
+                      <div class="row align-items-center">
                         <!--Telefono-->
-                        <input class="input" type="number" name="Telefono" placeholder="Telefono">
-                        <!--Nacionalidad-->
+                        <div class="col-sm-12 col-lg-6 input-group flex-nowrap gy-3">
+                          <span class="input-group-text" id="addon-wrapping"><i class="bi bi-telephone-inbound"></i></span>
+                          <input type="text" class="form-control text-start" value="+54 9 351 6342315" aria-label="Username" aria-describedby="addon-wrapping" disabled>
+                        </div>
+                          <!--Email-->
+                          <div class="col-sm-12 col-lg-6 input-group flex-nowrap gy-3">
+                            <span class="input-group-text" id="addon-wrapping"><i class="bi bi-envelope-check"></i></span>
+                            <input type="text" class="form-control text-start" value="peh_tj@hotmail.com" aria-label="Username" aria-describedby="addon-wrapping" disabled>
+                        </div>
+                        <!--Ubicacion-->
+                        <div class="col-sm-12 col-lg-6 input-group flex-nowrap gy-3">
+                            <span class="input-group-text" id="addon-wrapping"><i class="bi bi-geo-alt"></i></span>
+                            <input type="text" class="form-control text-start" value="Catelli 523, Río Ceballos, Córdoba." aria-label="Username" aria-describedby="addon-wrapping" disabled>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6  container-fluid">
+                      <div class="row">
+                        <!--Mapa-->
+                        <div class="col-sm-12 mt-3 text-center">
+                          <label class="my-2">Aqui nos vas a encontrar..</label>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1707.243390341776!2d-64.31456334207576!3d-31.15176469993697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x137eba6a0ecbda0b!2zMzHCsDA5JzA2LjQiUyA2NMKwMTgnNDguNSJX!5e0!3m2!1ses-419!2sar!4v1657190028281!5m2!1ses-419!2sar" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <form title="Contacto">
+                    <h2>Tenes dudas.? Escribinos</h2>
+                    <!--Nombre y Apellido-->
+                    <input class="input" type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
+                    <!--Genero-->
+                    <div class="checks">
+                        <label>Sexo:</label>
                         <div>
-                            <select class="region">
-                                <option selected>Selecione su Nacionalidad</option>
-                                <option value="Argentina">Argentina</option>
-                                <option value="Brasil">Brasil</option>
-                                <option value="Chile">Chile</option>
-                                <option value="Bolivia">Bolivia</option>
-                                <option value="Uruguay">Uruguay</option>
-                            </select>
+                            <input class="check" type="radio" id="check1" name="Genero">
+                            <label for="check1">Hombre</label>   
                         </div>
-                        <!--Comentario-->
-                        <textarea class="input" name="Comentario" placeholder="Dejanos tu Comentario"></textarea>
-                        <!--Termino y Condiciones-->
-                        <div class="ckeckButton">
-                            <div class="checkLabel">
-                                <input class="checkCond" type="checkbox" id="check3"><label for="check3">Acepto los Terminos y Condiciones</label>
-                            </div>
-                            <!--Enviar y Borrar-->
-                            <div>
-                                <input class="buttonForm" type="button" value="Enviar">
-                                <input class="buttonForm" type="reset" value="Borrar">
-                            </div>
+                        <div>
+                            <input class="check" type="radio" id="check2" name="Genero">
+                            <label for="check2">Mujer</label>                            
                         </div>
-                    </form>
+                    </div>
+                    <!--Email-->
+                    <input class="input" type="email" name="Email" placeholder="Email">
+                    <!--Telefono-->
+                    <input class="input" type="number" name="Telefono" placeholder="Telefono">
+                    <!--Nacionalidad-->
+                    <div>
+                        <select class="region">
+                            <option selected>Selecione su Nacionalidad</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Uruguay">Uruguay</option>
+                        </select>
+                    </div>
+                    <!--Comentario-->
+                    <textarea class="input" name="Comentario" placeholder="Dejanos tu Comentario"></textarea>
+                    <!--Termino y Condiciones-->
+                    <div class="ckeckButton">
+                        <div class="checkLabel">
+                            <input class="checkCond" type="checkbox" id="check3" checked><label for="check3">Acepto los Terminos y Condiciones</label>
+                        </div>
+                        <!--Enviar y Borrar-->
+                        <div>
+                            <input class="buttonForm" type="button" value="Enviar">
+                            <input class="buttonForm" type="reset" value="Borrar">
+                        </div>
+                    </div>
+                  </form>
                 </main>    
             </section>
              <!--Footer-->
@@ -175,9 +206,9 @@
                     <!--Redes-->
                     <div class="col-sm-12 col-lg-2">
                       <aside class="redes text-center my-2">
-                        <i class="bi bi-facebook"></i>
-                        <i class="bi bi-instagram"></i>
-                        <i class="bi bi-whatsapp"></i>
+                        <a title="Facebook" href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook" id="Facebook"></i></a>
+                        <a title="Instagram" href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram" id="Instagram"></i></a>
+                        <a title="Whatsapp" href="https://www.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp" id="Whatsapp"></i></a>
                       </aside>
                     </div>
                     <!--Politica y Uso Links-->
