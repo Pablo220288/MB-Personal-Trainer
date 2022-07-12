@@ -141,19 +141,19 @@
 
 @keyframes slai {
   0% {
-    background-image: url("../../Assets/FondoInicio.jpg");
+    background-image: url("../../assets/FondoInicio.jpg");
   }
   25% {
-    background-image: url("../../Assets/Galeria3.jpg");
+    background-image: url("../../assets/Galeria3.jpg");
   }
   50% {
-    background-image: url("../../Assets/FondoShop.jpg");
+    background-image: url("../../assets/FondoShop.jpg");
   }
   75% {
-    background-image: url("../../Assets/Galeria4.jpg");
+    background-image: url("../../assets/Galeria4.jpg");
   }
   100% {
-    background-image: url("../../Assets/Galeria6.jpg");
+    background-image: url("../../assets/Galeria6.jpg");
   }
 }
 @-webkit-keyframes slide-in-fwd-center {
