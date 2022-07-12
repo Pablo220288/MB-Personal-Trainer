@@ -10,6 +10,10 @@
         }
     }
     .modal-backdrop{
-        --bs-backdrop-zindex:0;
+        --bs-backdrop-zindex:1;
     }
+}
+.modal-backdrop {
+    --bs-backdrop-zindex: 1;
+
 }
